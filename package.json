@@ -1,0 +1,15 @@
+{
+    "name": "group-media",
+    "version": "1.0.0",
+    "main": "main.js",
+    "devDependencies": {
+        "electron": "^1.8.8"
+    },
+    "scripts": {
+        "start": "electron ."
+    },
+    "dependencies": {
+        "mime-types": "^2.1.30",
+        "node-fetch": "^2.6.1"
+    }
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>login</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <script src="eventmng.js" defer ></script>    
+</head>
+
+<body style="background-color: #090510;">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav-1" style="background-color: #090510;">
+        <div class="container"><a class="navbar-brand js-scroll-trigger" href="#" style="font-weight: bold;color: rgba(255,255,255,0.9);">GROUPMEDIA</a>
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid">
+                    <div><a class="navbar-brand d-none" href="#"> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div>
+                    <a id="profilebutton" href="profile_page.html"
+                        style="background-color:  #090510;color: rgba(255,255,255,0.5);font-family: Cabin, sans-serif;">PROFILE</a>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav main-nav">
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="eventsbutton" href="eventmng_page.html" style="background-color: #090510;color: rgba(255,255,255,0.5);font-family: Cabin, sans-serif;" href="#">EVENTS</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="validatebutton" href="validate_page.html" style="background-color: #090510;color: rgba(255,255,255,0.5);font-family: Cabin, sans-serif;">VALIDATE</a></li>
+                            <li class="nav-item" role="presentation"><a class="nav-link" id="versionbutton" href="version_page.html" style="background-color: #090510;color: rgba(255,255,255,0.5);font-family: Cabin, sans-serif;">MANAGE VERSION</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav><button class="btn btn-light submit-button" id="logoutbutton" type="button" style="background-color: #47f4c0;">LOG OUT</button></div>
+    </nav>
+    <div class="container" style="margin-top: 80px;">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center" style="font-size: 30px;">MANAGE EVENTS<br></h5>
+                    <hr>
+                    <ul class="fa-ul"></ul><button class="btn btn-outline-primary btn-block text-uppercase" id="viewmodbutton" type="button">VIEW / MODIFY EVENTS</button></div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card-body">
+                    <h5 class="card-title text-muted text-uppercase text-center">ROLE MANAGEMENT<br></h5>
+                    <div class="row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="font-family: Cabin, sans-serif;">Username</label></div>
+                        <div class="col-sm-6 input-column"><input id="username" type="text" name="username"></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="font-family: Cabin, sans-serif;">Event</label></div>
+                        <div class="col-sm-6 input-column"><input id="event_id" type="text" name="event"></div>
+                    </div>
+                    <div class="row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="font-family: Cabin, sans-serif;">Permisssion</label></div>
+                        <div class="col-sm-6 input-column"><!--<input type="text" name="permission"> -->
+                            <select id="permission" class="form-select form-select-lg mb-3" aria-label=".form-select-lg example">
+                                <option selected>Select permission kind</option>
+                                <option value="2">WRITE</option>
+                            </select>
+                        </div>
+                    </div>
+                    <hr><button class="btn btn-outline-primary btn-block text-uppercase" id="viewbutton" type="button">VIEW EMPLOYEES</button>
+                    <ul class="fa-ul"></ul>
+                    <button class="btn btn-outline-primary btn-block text-uppercase" id="addbutton" type="button">ADD</button></div>
+            </div>
+            <div class="col-md-6">
+                <form class="custom-form" style="background-color: #090510;padding-top: 0px;margin-top: 0px;">
+                    <h5 class="card-title text-muted text-uppercase text-center" style="margin: 20px;">NEW EVENT</h5>
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="font-family: Cabin, sans-serif;">Name</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" id="name" type="text" name="name"></div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="pawssword-input-field" style="font-family: Cabin, sans-serif;">Description</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" id="desc" type="text" name="desc"></div>
+                    </div>
+                    <div class="form-row form-group">
+                        <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field" style="font-family: Cabin, sans-serif;">Duedate</label></div>
+                        <div class="col-sm-6 input-column"><input class="form-control" type="date" id="duedate" name="trip-start"
+                            value="2021-04-30" min="2020-01-01" max="2999-12-31"></div>
+                    </div>
+                    <div class="form-check" style="margin-bottom: 18px;">
+                        <input class="form-check-input" type="checkbox" id="publicity">
+                        <label class="form-check-label" for="create" style="font-family: Cabin, sans-serif;font-weight: normal;margin: 10px;">Publicity</label></div>
+                        <button class="btn btn-outline-primary btn-block text-uppercase" id="createbutton" type="button">CREATE</button></form>
+            </div>
+        </div>
+    </div>        
+</body>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>login</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/divider-text-middle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="assets/css/Login-Form-Clean.css">
+    <script src="upload.js" defer></script>
+</head>
+
+<body style="background-color: #090510;">
+    <nav class="navbar navbar-light navbar-expand-md navbar navbar-expand-lg fixed-top" id="mainNav-1" style="background-color: #090510;">
+        <div class="container">
+            <nav class="navbar navbar-light navbar-expand-md">
+                <div class="container-fluid">
+                    <div><a class="navbar-brand d-none" href="#"> </a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button></div><a class="navbar-brand js-scroll-trigger"
+                        href="#" style="font-weight: bold;color: rgba(255,255,255,0.9);">GROUPMEDIA</a>
+                    <div class="collapse navbar-collapse" id="navcol-1">
+                        <ul class="nav navbar-nav main-nav"></ul>
+                    </div>
+                </div>
+            </nav><button class="btn btn-light submit-button" id="logoutbutton" type="button" style="background-color: #47f4c0;">LOG OUT</button></div>
+    </nav>
+    <form class="custom-form" style="background-color: #090510;height: 600px;padding-top: 0px;margin-top: 0px;">
+        <h1>UPLOAD</h1>
+        <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Name</label></div>
+            <div class="col-sm-6 input-column"><input class="form-control" id="name" type="text" name="name"></div>
+        </div>
+        <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Description</label></div>
+            <div class="col-sm-6 input-column"><input class="form-control" id="desc" type="text" name="desc"></div>
+        </div>
+        <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Extension</label></div>
+            <div class="col-sm-6 input-column"><input class="form-control" id="extension" type="text" name="extension"></div>
+        </div>
+        <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Type</label></div>
+            <div class="col-sm-6 input-column"><input class="form-control" id="type" type="text" name="type"></div>
+        </div>
+        <div class="form-row form-group">
+            <div class="col-sm-4 label-column"><label class="col-form-label" for="name-input-field">Event identifier</label></div>
+            <div class="col-sm-6 input-column"><input class="form-control" id="project_id" type="text" name="project_id"></div>
+        <div class="form-row form-group">
+            <input type="file" id="uploadbutton" />
+        </div>
+        </div><button class="btn btn-light submit-button" type="button" id="submitbutton" style="background-color: #47f4c0;">SUBMIT</button></form>
+
+</body>
+</html>
